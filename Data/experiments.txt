@@ -1,0 +1,22 @@
+Experiments
+
+run1	:	test run
+run2	:	full scan with 2x small metal plates (bs 1-2)
+run3	:	line with 3x metal plates (bs 1-2)
+run4	: 	square with "
+run5	:	square with 3x metal plates, shifted more towards center
+run6	:	full scan with "
+run7	: 	shifted square, 3x metal plates, with straights through harsh NLOS areas 
+run8 	:	10 loops around square (like above)
+run9	: 	random walk (52 waypoints, randomly distributed in arena)
+run10	: 	square in LOS
+run11	:	static at position (1/2) with metal
+run12	:	static at position (2/1) "
+run13	:	static at position (1.66/1) ", facing east
+run14	:	static at position (1.66/1) ", facing south
+run15	:	static at position (1.66/1) without metal, facing south 
+run16	:	rotating at position (1.66/1) without metal
+run17	:	rotating at position (1.66/1) metal on and off in intervals
+run18	:	rotating at position (1.66/1) with metal
+run19	:	rotating around one wheel at position (1.66/1) with metal
+run20	:	back and forth at position (1.66/1) with metal
