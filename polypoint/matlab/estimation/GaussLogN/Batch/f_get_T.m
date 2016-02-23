@@ -1,4 +1,4 @@
-% 23.08.2011
+% 22.02.2016
 % Amanda Prorok
 % 
 % Expectation step 
@@ -19,9 +19,12 @@ for i=1:num_mod
 end
 
 t = nan(num_mod,length(data));
-for i=1:num_mod
-    t(i,:) = tau(i) * normpdf(data,m(i),s(i));
-end
+
+i =1; % Gauss
+t(i,:) = tau(i) * normpdf(data,m(i),s(i));
+i = 2; % Lognormal
+t(i,:) = tau(i) * lognpdf(data,m(i),s(i));
+
 
 tsum = sum(t,1);
 %size(tsum) %sum

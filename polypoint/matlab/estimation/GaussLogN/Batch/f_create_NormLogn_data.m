@@ -1,4 +1,4 @@
-% 13.04.2012
+% 22.02.2016
 % Amanda Prorok
 %
 % Create Gaussian Mixture Model data

@@ -1,10 +1,11 @@
 %
 % analyze polypoint ranges
 
-%load ../data/distances2d.mat
-%load ../data/AnchorsLocation.mat
-
 close all
+clear
+
+load ../data/distances2d.mat
+load ../data/AnchorsLocation.mat
 
 % plot anchor nodes
 ax = anchors(:,1);

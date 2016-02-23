@@ -18,6 +18,6 @@ P(f,:) = w(f) .* lognpdf(ax,m(f),s(f));
 
 F = sum(P,1);
 
-plot(fax,ax,F,'color',col,'linewidth',2);
+plot(fax,ax,F,'color',col,'linewidth',3);
 
 end

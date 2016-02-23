@@ -4,12 +4,13 @@
 % Batch EM for mixture of Gaussian and Lognormal 
 %%
 
-function parX = f_batch_EM(max_iter,data)
+function parXf_batch_EM(max_iter,data)
 
 plot_on = false;
 num_mod = 2; % number of modes
 m_range = [-0.2 0.2; 0 3];
-s_range = [0.1 0.6; 0.1 2];
+s_range = [0.2 1; 0.2 1];
+w_range = [0.1 0.8];
 
 if (~nargin)
     max_iter = 100;
@@ -62,7 +63,7 @@ parX.w = tau(:,max_iter);
 
 % Plot
 if plot_on
-    ax = min(data)-0.1:0.02:max(data)+0.1;
+    ax = min(data):0.02:max(data);
     figure, hold on;
     fax = gca;
     % Plot data points
