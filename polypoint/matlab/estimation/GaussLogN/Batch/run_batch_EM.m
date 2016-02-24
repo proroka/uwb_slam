@@ -33,7 +33,7 @@ end
 offset = [0.3 -0.2 -0.5 -1 -1.45 -1.9 -2.2 -3.25 -3.75];
 
 for i=1:n
-    fax = subplot(rows,3,i)
+    fax = subplot(rows,3,i);
     
     % since data is bad, we need to remove offsets, 0s, nans
     data = r(i,:);
@@ -46,8 +46,6 @@ for i=1:n
     
     if plot_all
         ax = min(d):0.02:max(d);
-        %figure, hold on;
-        %fax = gca;
         % Plot data points
         f_plot_datapoints(fax,d);
         hold on;
